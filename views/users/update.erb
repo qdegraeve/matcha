@@ -1,0 +1,31 @@
+<form action="/users/<%= params[:id] %>/update" method="post">
+	<p>
+		<label>Login</label>
+		<input type="text" name="login" value="<%= @user['login'] %>"/>
+	</p>
+	<p>
+		<label>Email</label>
+		<input type="email" name="email" value="<%= @user['email'] %>"/>
+	</p>
+	<p>
+		<label>First Name</label>
+		<input type="text" name="first_name" value="<%= @user['first_name'] %>"/>
+	</p>
+	<p>
+		<label>Last Name</label>
+		<input type="text" name="last_name" value="<%= @user['last_name'] %>"/>
+	</p>
+	<p>
+		<label>Sex</label>
+		<input type="text" name="sex" value="<%= @user['sex'] %>"/>
+	</p>
+	<p>
+		<label>Interested in ?</label>
+		<input type="text" name="interested_in" value="<%= @user['interested_in'] %>"/>
+	</p>
+	<p>
+		<label>description</label>
+		<input type="text" name="description" value="<%= @user['description'] %>"/>
+	</p>
+	<input type="submit" name="Sign In" />
+</form>

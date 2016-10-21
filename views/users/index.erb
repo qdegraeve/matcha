@@ -1,0 +1,16 @@
+<% @users.each do |user| %>
+	<p>login : <%= user['login'] %></p>
+	<p>email : <%= user['email'] %></p>
+	<p>password : <%= user['password'] %></p>
+	<p>first_name :<%= user['first_name'] %></p>
+	<p>last_name : <%= user['last_name'] %></p>
+	<a href="/users/<%= user['id'] %>">View account</a>
+	<br/>
+	<a href="/users/<%= user['id'] %>/destroy">Delete account</a>
+	<br/>
+	<a href="/users/<%= user['id'] %>/update">Edit account</a>
+	<br/>
+	<br/>
+<% end %>
+
+<a href="/users/new">Create account</a>

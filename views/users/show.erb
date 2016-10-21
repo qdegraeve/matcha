@@ -1,0 +1,12 @@
+<p>login ==> <%= @user['login'] %></p>
+<p>email ==> <%= @user['email'] %></p>
+<p>password ==> <%= @user['password'] %></p>
+<p>first_name ==><%= @user['first_name'] %></p>
+<p>last_name ==> <%= @user['last_name'] %></p>
+<p>sex ==> <%= @user['sex'] %></p>
+<p>interested in ==> <%= @user['interested_in'] %></p>
+<p>descritption ==> <%= @user['description'] %></p>
+
+<a href="/users">users list</a>
+<a href="/users/<%= params[:id] %>/destroy">Delete account</a>
+<a href="/users/<%= params[:id] %>/update">Edit account</a>
